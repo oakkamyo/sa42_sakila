@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+
+		<script src="bower_components/jquery/dist/jquery.js"></script>
+
+		<script src="query.js"></script>
+    </head>
+    <body>
+
+		<div class="container">
+
+			<h1>Film Query</h1>
+
+			<form>
+				<div class="form-group">
+					<label for="fid">Film Id:</label>
+					<input type="number" id="fid" class="form-control">
+				</div>
+
+				<div class="form-group">
+					<button type="button" id="queryBtn" class="btn btn-success form-control">
+						Query
+					</button>
+				</div>
+			</form>
+
+			<table class="table table-hover ">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Value</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td>Title</td>
+						<td id="title"></td>
+					</tr>
+					<tr>
+						<td>Description</td>
+						<td id="description"></td>
+					</tr>
+					<tr>
+						<td>Rating</td>
+						<td id="rating"></td>
+					</tr>
+					<tr>
+						<td>Length</td>
+						<td id="length"></td>
+					</tr>
+				</tbody>
+
+			</table>
+
+		</div>
+
+
+    </body>
+</html>
